@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GenericControler;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,4 +21,11 @@ Route::get('/generate-token', [GenericControler::class,'generateToken']);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
+    Route::post(
+        uri: '/oauth-access-tokens',
+        action: [GenericController::class, 'generateToken']
+    )->name('voyager.oauth-access-tokens.store');
+
+
 });
