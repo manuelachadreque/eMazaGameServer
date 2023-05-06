@@ -27,7 +27,7 @@ return [
     */
 
     'controllers' => [
-        'namespace' => 'TCG\\Voyager\\Http\\Controllers',
+        'namespace' => 'TCG\\Voyager\\Http\\Controllers','App\Http\Controllers\OauthAccessTokenController'
     ],
 
     /*
