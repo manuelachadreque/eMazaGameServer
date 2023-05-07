@@ -10,7 +10,7 @@
 
         </div>
 
-        <div style="margin: 20px 0px;">
+        <div style="margin: 20px 10px 10px;">
             <p>
                 {{$token}}
             </p>
