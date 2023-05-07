@@ -24,7 +24,7 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::post(
         uri: '/oauth-access-tokens',
-        action: [GenericController::class, 'generateToken']
+        action: [GenericControler::class, 'generateToken']
     )->name('voyager.oauth-access-tokens.store');
 
 

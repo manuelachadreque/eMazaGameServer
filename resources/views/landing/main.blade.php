@@ -112,6 +112,7 @@
                         </div>
 
 						<div class="pricing-tables-wrap">
+                           
                             <div class="pricing-table">
                                 <div class="pricing-table-inner is-revealing">
                                     <div class="pricing-table-main">
@@ -140,7 +141,7 @@
 
 
                                     <div class="pricing-table-cta mb-8">
-                                        <a class="button button-primary button-shadow button-block" href="#">Pre order now</a>
+                                        <a class="button button-primary button-shadow button-block" href="#">Baixar Agora</a>
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +154,7 @@
                                         <div class="pricing-table-header pb-24">
                                             <div class="pricing-table-price"><span class="pricing-table-price-currency h2">MT</span><span class="pricing-table-price-amount h1">129</span><span class="text-xs">/mes</span></div>
                                         </div>
-										<div class="pricing-table-features-title text-xs pt-24 pb-24">Todos os Recursos Basicos</div>
+										<div class="pricing-table-features-title text-xs pt-24 pb-24">Todos os Recursos</div>
                                         <ul class="pricing-table-features list-reset text-xs">
                                             <li>
                                                 <span>Lorem ipsum dolor sit nisi</span>

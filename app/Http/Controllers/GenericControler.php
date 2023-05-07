@@ -21,10 +21,13 @@ class GenericControler extends Controller
         if (auth()->user()->hasRole('admin')){
 
             $user = User::find(auth()->id());
+            $tokenName = $request-> name? $request->name : $user->name. '\'s Token';
 
-            $token = $user ->createToken($user->name . '\'s Token')->accessToken;
+            $token = $user->createToken($tokenName)->accessToken;
+            //$token = $user ->createToken($user->name . '\'s Token')->accessToken;
 
-            dd($token);
+
+            return redirect()->to(path:'/admin/oauth-access-tokens')->with(['token'=>$token]);
 
 
 
