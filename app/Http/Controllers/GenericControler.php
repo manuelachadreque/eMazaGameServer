@@ -13,7 +13,7 @@ class GenericControler extends Controller
 
     public function generateToken(Request $request){
 
-        dd(vars: 'generateToken', data: $request->all());
+        //dd(vars: 'generateToken', data: $request->all());
 
 
         //TODO Verificar se o user e administrator
@@ -24,10 +24,15 @@ class GenericControler extends Controller
             $tokenName = $request-> name? $request->name : $user->name. '\'s Token';
 
             $token = $user->createToken($tokenName)->accessToken;
+
+
+            return view('displayTokens', compact( 'token'));
+
             //$token = $user ->createToken($user->name . '\'s Token')->accessToken;
 
 
-            return redirect()->to(path:'/admin/oauth-access-tokens')->with(['token'=>$token]);
+            //return redirect()->to(path:'/admin/oauth-access-tokens')->with(['token'=>$token]);
+
 
 
 
