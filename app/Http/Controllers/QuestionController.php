@@ -17,7 +17,7 @@ class QuestionController extends Controller
     );
     }
 
-    public function index(Request $request , Question $subject){
+    public function index(Request $request , Question $question){
 
         return $this->ProcessQuestions($request);
     }
