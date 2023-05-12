@@ -11,10 +11,10 @@
 	                        <div class="hero-cta"><a class="button button-primary" href="https://play.google.com/store/apps/details?id=explicador.co.mz&hl=en_US&pli=1" target="_blank">Baixar App</a>
 
                             @if(auth()->check())
-                                <a class="button" href="/admin/profile">Perfil</a>
+                                <a class="button button-primary" href="/admin/profile">Perfil</a>
 
                             @else
-                                <a class="button" href="/admin">Entrar</a>
+                                <a  class="button button-primary" href="/admin">Entrar</a>
 
                             @endif
 
